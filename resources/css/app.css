@@ -1,4 +1,4 @@
-input.form-control {
+.form-control {
     margin: 0 auto;
     width: 43%;
     padding-top: 0.5rem!important;
@@ -11,3 +11,4 @@ input.form-control {
 .py-3 {
     padding-top: 0.5rem!important;
 }
+
