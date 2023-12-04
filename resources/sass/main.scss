@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --bs-border-radius: 1.375rem;
 }
@@ -7,8 +12,23 @@
 
     .form-control {
         margin: 0 auto;
-        width: 40%;
+        width: 41%;
         padding-top: 0.5rem!important;
     }
 }
 
+input::placeholder {
+    text-indent: 3px;
+}
+
+/*.dynamic-button {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}*/
