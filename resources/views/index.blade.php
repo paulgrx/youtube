@@ -21,18 +21,14 @@
                 </div>
         </header>
         <div class="content">
-<!--            <button class="dynamic-button" onclick="alert('Button 1 clicked')">Button 1</button>
-            <button class="dynamic-button" onclick="alert('Button 2 clicked')">Button 2</button>-->
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-            <button type="button" class="btn btn-outline-secondary">Secondary</button>
-            <button type="button" class="btn btn-outline-success">Success</button>
-            <button type="button" class="btn btn-outline-danger">Danger</button>
-            <button type="button" class="btn btn-outline-warning">Warning</button>
-            <button type="button" class="btn btn-outline-info">Info</button>
-            <button type="button" class="btn btn-outline-light">Light</button>
-            <button type="button" class="btn btn-outline-dark">Dark</button>
-
-
+            <button type="button" class="btn mr-2">All</button>
+            <button type="button" class="btn">New</button>
+            <button type="button" class="btn">Music</button>
+            <button type="button" class="btn">Gaming</button>
+            <button type="button" class="btn">News</button>
+            <button type="button" class="btn">Deep House</button>
+            <button type="button" class="btn">Christmas Music</button>
+            <button type="button" class="btn">Trailers</button>
         </div>
 
 
