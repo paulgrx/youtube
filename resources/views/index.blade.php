@@ -31,6 +31,25 @@
             <button type="button" class="btn">Trailers</button>
         </div>
 
+        <div class="video-container">
+            <div class="row">
+                <div class="col-lg-3">1</div>
+                <div class="col-lg-3">2</div>
+                <div class="col-lg-3">3</div>
+                <div class="col-lg-3">4</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">1</div>
+                <div class="col-lg-3">2</div>
+                <div class="col-lg-3">3</div>
+                <div class="col-lg-3">4</div>
+            </div> <div class="row">
+                <div class="col-lg-3">1</div>
+                <div class="col-lg-3">2</div>
+                <div class="col-lg-3">3</div>
+                <div class="col-lg-3">4</div>
+            </div>
+        </div>
 
     </body>
 </html>
