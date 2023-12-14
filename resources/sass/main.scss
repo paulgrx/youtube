@@ -30,19 +30,24 @@ input::placeholder {
 .video-container {
     max-width: 1200px;
     margin: 0;
+    border-collapse: separate;
+    border-spacing: 10px;
 }
 
 .row {
-    border-collapse: collapse;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 
 .col-lg-3 {
     border: 1px solid #ddd;
     height: 213px;
-    padding: 10px;
-
+    border-radius: 1rem;
+    flex: 0 0 calc(24.5% - 10px);
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
