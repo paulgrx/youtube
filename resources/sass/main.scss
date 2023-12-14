@@ -32,15 +32,20 @@ input::placeholder {
     margin: 0;
 }
 
-.video {
-    width: 379px;
-    height: 213px;
-    margin: 10px;
-    background-color: #f0f0f0;
-    border-radius: 14px;
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.row {
+    border-collapse: collapse;
+    width: 100%;
 }
 
+
+.col-lg-3 {
+    border: 1px solid #ddd;
+    height: 213px;
+    padding: 10px;
+
+}
+
+
+div.content {
+    padding-bottom: 35px;
+}
