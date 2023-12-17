@@ -35,9 +35,10 @@ input::placeholder {
 }
 
 .row {
-    width: 100%;
+    width: 123%;
     display: flex;
     justify-content: space-around;
+    padding-bottom: 150px;
 }
 
 
@@ -53,4 +54,13 @@ input::placeholder {
 
 div.content {
     padding-bottom: 35px;
+}
+
+.sidebar {
+    float: left;
+}
+
+.nav-link.active {
+    color: RGBA(26,30,33,var(--bs-link-opacity, 1)) !important;
+    background-color: none;
 }
