@@ -51,16 +51,20 @@ input::placeholder {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.all-content {
+    flex-grow: 1;
+}
 
 div.content {
     padding-bottom: 35px;
 }
 
 .sidebar {
-    float: left;
+    width: 12%;
+    height: 500px;
 }
 
-.nav-link.active {
+.nav-pills .nav-link.active {
     color: RGBA(26,30,33,var(--bs-link-opacity, 1)) !important;
-    background-color: none;
+    background-color: transparent;
 }
