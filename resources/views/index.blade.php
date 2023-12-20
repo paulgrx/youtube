@@ -12,6 +12,68 @@
     </head>
 
     <body>
+        <div class="content">
+            <div class="content-header">
+<!--                button menu + logo + search + sign in-->
+
+<!--                <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light">
+                    <button class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                        <div class="close-icon py-1">✖</div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsingNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>-->
+
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Your Brand</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="py-3 mb-3">
+                    <div class="d-flex align-items-center">
+                        <form class="w-100 me-3" role="search">
+                            <input type="search" class="form-control" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="aside">
+<!--                menu aside-->
+            </div>
+            <div class="video-content">
+                <div class="tags">tags</div>
+                <div class="items">
+<!--                    video items-->
+                </div>
+            </div>
+        </div>
 
         <div class="all-">
             <div class="sidebar">
@@ -56,7 +118,7 @@
                 <hr>
                 <div class="dropdown">
                     <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+<!--                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">-->
                         <strong>mdo</strong>
                     </a>
                     <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
@@ -71,14 +133,7 @@
             </div>
             <div class="all-content">
 
-                <header class="py-3 mb-3">
 
-                    <div class="d-flex align-items-center">
-                        <form class="w-100 me-3" role="search">
-                            <input type="search" class="form-control" placeholder="Search" aria-label="Search">
-                        </form>
-                    </div>
-                </header>
 
                 <div class="content">
                     <button type="button" class="btn mr-2">All</button>
@@ -126,3 +181,8 @@
 
     </body>
 </html>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn"></script>
+
