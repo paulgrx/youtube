@@ -5,6 +5,8 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+
 
         @vite(['resources/sass/app.scss'])
 
@@ -60,7 +62,7 @@
                 </div>
             </div>
 
-
+            
 
 
 
