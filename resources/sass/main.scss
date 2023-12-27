@@ -83,3 +83,22 @@ div.content {
     display: inline;
 }
 
+.sign-in-button {
+    width: 6%;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dbdbe0;
+    padding: 6px;
+    background-color: transparent;
+}
+
+.sign-in-button svg {
+    margin-right: 10px;
+}
+
+.yt-core-attributed-string {
+    color: #396eec;
+    font-weight: 900;
+    font-size: 1.1em;
+}
