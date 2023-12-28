@@ -19,8 +19,9 @@
 
                 <div class="button_x_logo">
                     <!--button menu-->
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; margin-right: 19px; /*display: block; width: 1.3%; height: auto;*/"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg>
-
+                    <button class="button-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; margin-right: 19px; /*display: block; width: 1.3%; height: auto;*/"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg>
+                    </button>
                     <!--logo-->
                     <svg xmlns="http://www.w3.org/2000/svg" class="external-icon" viewBox="0 0 90 20" focusable="false" style="pointer-events: none; /*display: block; height: auto;*/ width: 27%; ">
                         <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
@@ -60,12 +61,49 @@
                 </button>
             </div>
 
-
-
-
-
+            <!--                menu aside-->
             <div class="aside">
-<!--                menu aside-->
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">
+                                <!--                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>-->
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link link-dark">
+                                <!--                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>-->
+                                Shorts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link link-dark">
+                                <!--                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>-->
+                                Subscriptions
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="#" class="nav-link link-dark">
+                                <!--                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>-->
+                                You
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link link-dark">
+                                <!--                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>-->
+                                History
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <yt-formatted-string class="style-scope ytd-guide-signin-promo-renderer">Sign in to like videos, comment, and subscribe.</yt-formatted-string>
+
+                    <button class="sign-in-button-aside">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: auto; height: auto; padding-right: 5px">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 1c4.96 0 9 4.04 9 9 0 1.42-.34 2.76-.93 3.96-1.53-1.72-3.98-2.89-7.38-3.03A3.996 3.996 0 0016 9c0-2.21-1.79-4-4-4S8 6.79 8 9c0 1.97 1.43 3.6 3.31 3.93-3.4.14-5.85 1.31-7.38 3.03C3.34 14.76 3 13.42 3 12c0-4.96 4.04-9 9-9zM9 9c0-1.65 1.35-3 3-3s3 1.35 3 3-1.35 3-3 3-3-1.35-3-3zm3 12c-3.16 0-5.94-1.64-7.55-4.12C6.01 14.93 8.61 13.9 12 13.9c3.39 0 5.99 1.03 7.55 2.98C17.94 19.36 15.16 21 12 21z" fill="#396eec"></path></svg>
+                        <span class="yt-core-attributed-string yt-core-attributed-string--white-space-no-wrap" role="text">Sign in</span>
+                    </button>
             </div>
             <div class="video-content">
                 <div class="tags"><!--tags--></div>
@@ -76,61 +114,7 @@
         </div>
 
         <div class="all-">
-            <div class="sidebar">
 
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                    <span class="fs-4">YouTube</span>
-                </a>
-                <hr>
-                <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">
-                            <!--                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>-->
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link link-dark">
-                            <!--                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>-->
-                            Shorts
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link link-dark">
-                            <!--                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>-->
-                            Subscriptions
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link link-dark">
-                            <!--                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>-->
-                            You
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link link-dark">
-                            <!--                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>-->
-                            History
-                        </a>
-                    </li>
-                </ul>
-                <hr>
-                <div class="dropdown">
-                    <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-<!--                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">-->
-                        <strong>mdo</strong>
-                    </a>
-                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    </ul>
-                </div>
-
-            </div>
             <div class="all-content">
 
 
@@ -182,8 +166,4 @@
 
     </body>
 </html>
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn"></script>
 

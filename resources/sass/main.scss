@@ -85,7 +85,7 @@ div.content {
     margin: 0 auto;
 }
 
-.sidebar {
+.aside {
     width: 12%;
     height: 500px;
 }
@@ -133,4 +133,38 @@ div.content {
     color: #396eec;
     font-weight: 900;
     font-size: 1.1em;
+}
+
+.button-menu {
+    background-color: transparent;
+    border: transparent;
+}
+
+.style-scope.ytd-guide-signin-promo-renderer{
+    display: block;
+    color: var(--yt-spec-text-primary);
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.yt-core-attributed-string.yt-core-attributed-string--white-space-no-wrap {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.sign-in-button-aside {
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 7px;
+    height: 36px;
+    width: 48%;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dbdbe0;
+    padding: 10px;
+    background-color: transparent;
 }
