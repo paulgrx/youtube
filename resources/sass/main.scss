@@ -52,20 +52,12 @@ input::placeholder {
     margin: 4px;
     font-weight: bolder;
 }
-.video-container {
+.video-items {
     max-width: 1200px;
     margin: 0;
     border-collapse: separate;
     border-spacing: 10px;
 }
-
-.row {
-    width: 123%;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 150px;
-}
-
 
 .col-lg-3 {
     border: 1px solid #ddd;
@@ -76,18 +68,16 @@ input::placeholder {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.all-content {
-    flex-grow: 1;
-}
-
 div.content {
     max-width: 1800px;
     margin: 0 auto;
 }
 
 .aside {
+    float: left;
     width: 12%;
     height: 500px;
+    padding-top: 12px;
 }
 
 .nav-pills .nav-link.active {
@@ -116,7 +106,7 @@ div.content {
     cursor: pointer;
     margin-top: 7px;
     height: 36px;
-    width: 6%;
+    width: 5.8%;
     border-radius: 17px;
     display: flex;
     align-items: center;
@@ -144,14 +134,13 @@ div.content {
     display: block;
     color: var(--yt-spec-text-primary);
     font-family: "Roboto","Arial",sans-serif;
-    font-size: 0.9rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     font-weight: 400;
 }
 
 .yt-core-attributed-string.yt-core-attributed-string--white-space-no-wrap {
     font-weight: 700;
-    font-size: 1em;
+    font-size: 0.9rem;
 }
 
 .sign-in-button-aside {
@@ -167,4 +156,32 @@ div.content {
     border: 1px solid #dbdbe0;
     padding: 10px;
     background-color: transparent;
+}
+
+.nav-link.active,
+.nav-link.link-dark {
+    padding-left: 0;
+}
+
+.p-aside {
+    padding-left: 18px;
+    font-weight: 700;
+}
+
+.aside hr {
+    margin-left: -10px;
+    opacity: 0.15;
+}
+
+.video-content {
+    width: 88%;
+    float: right;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 150px;
 }
