@@ -50,13 +50,21 @@ input::placeholder {
     background-color: #EEEEEEFF;
     border-radius: 10px;
     margin: 4px;
-    font-weight: bolder;
+    font-size: 0.86rem;
+    font-family: "Roboto","Arial",sans-serif;
+    line-height: 1.3rem;
+    font-weight: 900;
 }
+
+.btn:first-child {
+    margin-left: 0;
+}
+
 .video-items {
-    max-width: 1200px;
-    margin: 0;
+   /* max-width: 1200px;*/
+  /*  margin: 0;
     border-collapse: separate;
-    border-spacing: 10px;
+    border-spacing: 10px;*/
 }
 
 .col-lg-3 {
@@ -65,7 +73,7 @@ input::placeholder {
     border-radius: 1rem;
     flex: 0 0 calc(24.5% - 10px);
     background-color: #f0f0f0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 158px;
 }
 
 div.content {
@@ -78,6 +86,11 @@ div.content {
     width: 12%;
     height: 500px;
     padding-top: 12px;
+    transition: width 0.3s ease;
+}
+
+.aside.collapsed {
+    width: 50px;
 }
 
 .nav-pills .nav-link.active {
@@ -169,19 +182,29 @@ div.content {
 }
 
 .aside hr {
-    margin-left: -10px;
+    margin-left: -26px;
     opacity: 0.15;
 }
 
 .video-content {
-    width: 88%;
+    width: 86.5%;
     float: right;
+    margin-top: 16px;
+    margin-left: 60px;
+    transition: margin-left 0.3s ease;
+}
+
+.aside.collapsed + .video-content {
+    margin-left: 10px;
 }
 
 .row {
-    width: 100%;
+   /* width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
     justify-content: space-around;
-    padding-bottom: 150px;
+}
+
+.tags {
+    margin-bottom: 32px;
 }

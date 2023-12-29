@@ -120,45 +120,86 @@
             <div class="video-content">
                 <!--tags-->
                 <div class="tags">
-                        <button type="button" class="btn mr-2">All</button>
-                        <button type="button" class="btn">New</button>
-                        <button type="button" class="btn">Music</button>
-                        <button type="button" class="btn">Gaming</button>
-                        <button type="button" class="btn">News</button>
-                        <button type="button" class="btn">Deep House</button>
-                        <button type="button" class="btn">Christmas Music</button>
-                        <button type="button" class="btn">Trailers</button>
+                    <button type="button" class="btn">All</button>
+                    <button type="button" class="btn">Drifting</button>
+                    <button type="button" class="btn">Ski</button>
+                    <button type="button" class="btn">Jazz</button>
+                    <button type="button" class="btn">Podcasts</button>
+                    <button type="button" class="btn">Background music</button>
+                    <button type="button" class="btn">New</button>
+                    <button type="button" class="btn">Music</button>
+                    <button type="button" class="btn">Live</button>
+                    <button type="button" class="btn">Gaming</button>
+                    <button type="button" class="btn">News</button>
+                    <button type="button" class="btn">Deep House</button>
+                    <button type="button" class="btn">Christmas Music</button>
+                    <button type="button" class="btn">Trailers</button>
                 </div>
 
                 <div class="items">
                 <!--video items-->
                     <div class="video-items">
                         <div class="row">
-                            <div class="col-lg-3">1</div>
-                            <div class="col-lg-3">2</div>
-                            <div class="col-lg-3">3</div>
-                            <div class="col-lg-3">4</div>
-                            <div class="col-lg-3">1</div>
-                            <div class="col-lg-3">2</div>
-                            <div class="col-lg-3">3</div>
-                            <div class="col-lg-3">4</div>
-                            <div class="col-lg-3">1</div>
-                            <div class="col-lg-3">2</div>
-                            <div class="col-lg-3">3</div>
-                            <div class="col-lg-3">4</div>
-                            <div class="col-lg-3">1</div>
-                            <div class="col-lg-3">2</div>
-                            <div class="col-lg-3">3</div>
-                            <div class="col-lg-3">4</div>
-                            <div class="col-lg-3">1</div>
-                            <div class="col-lg-3">2</div>
-                            <div class="col-lg-3">3</div>
-                            <div class="col-lg-3">4</div>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
+                            <button class="col-lg-3">1</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttonMenu = document.querySelector(".button-menu");
+            const aside = document.querySelector(".aside");
+
+            buttonMenu.addEventListener("click", function () {
+                aside.classList.toggle("collapsed");
+            });
+        });
+
+        /*document.addEventListener('DOMContentLoaded', function () {
+            const homeLink = document.getElementById('home-link');
+            const shortsLink = document.getElementById('shorts-link');
+            const subscribeLink = document.getElementById('subscribe-link');
+            const asideContent = document.getElementById('aside-content');
+
+            // Обработчик событий для кнопки Home
+            homeLink.addEventListener('click', function () {
+                asideContent.innerHTML = <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; width: 13%;">
+                    <g><path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path></g></svg>;
+            });
+
+            // Обработчик событий для кнопки Shorts
+            shortsLink.addEventListener('click', function () {
+                asideContent.innerHTML = 'Содержимое для Shorts';
+            });
+
+            // Обработчик событий для кнопки Subscribe
+            subscribeLink.addEventListener('click', function () {
+                asideContent.innerHTML = 'Содержимое для Subscribe';
+            });
+        });*/
+    </script>
+
 </html>
 
