@@ -68,53 +68,55 @@
 
             <!--                menu aside-->
             <div class="aside" id="aside">
-                    <ul class="nav nav-pills flex-column mb-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active" aria-current="page">
-                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; width: auto;">
-                                    <g><path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path></g></svg>
-                                <span class="p-aside">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link link-dark">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; width: auto;">
-                                    <path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path></svg>
-                                <span class="p-aside">Shorts</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link link-dark">
-                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; width: auto;">
-                                    <path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>
-                                <span class="p-aside">Subscriptions</span>
-                            </a>
-                        </li>
-                        <hr id="hr-aside">
-                        <li>
-                            <a href="#" class="nav-link link-dark">
-                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; width: auto;">
-                                    <path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
-                                <span class="p-aside">You</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link link-dark">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" style="pointer-events: none; width: auto;" viewBox="0 0 24 24" width="24" focusable="false">
-                                    <g><path d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM22 12c0 5.51-4.49 10-10 10S2 17.51 2 12h1c0 4.96 4.04 9 9 9s9-4.04 9-9-4.04-9-9-9C8.81 3 5.92 4.64 4.28 7.38c-.11.18-.22.37-.31.56L3.94 8H8v1H1.96V3h1v4.74c.04-.09.07-.17.11-.25.11-.22.23-.42.35-.63C5.22 3.86 8.51 2 12 2c5.51 0 10 4.49 10 10z"></path></g></svg>
-                                <span class="p-aside">History</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <hr id="hr-aside">
-                    <yt-formatted-string id="menu-text" class="style-scope ytd-guide-signin-promo-renderer">Sign in to like videos, comment, and subscribe.</yt-formatted-string>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; width: auto;">
+                                <g><path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path></g></svg>
+                            <span class="p-aside">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; width: auto;">
+                                <path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path></svg>
+                            <span class="p-aside">Shorts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; width: auto;">
+                                <path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>
+                            <span class="p-aside">Subscriptions</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr id="hr-aside1">
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li>
+                        <a href="#" class="nav-link link-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; width: auto;">
+                                <path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
+                            <span class="p-aside">You</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" style="pointer-events: none; width: auto;" viewBox="0 0 24 24" width="24" focusable="false">
+                                <g><path d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM22 12c0 5.51-4.49 10-10 10S2 17.51 2 12h1c0 4.96 4.04 9 9 9s9-4.04 9-9-4.04-9-9-9C8.81 3 5.92 4.64 4.28 7.38c-.11.18-.22.37-.31.56L3.94 8H8v1H1.96V3h1v4.74c.04-.09.07-.17.11-.25.11-.22.23-.42.35-.63C5.22 3.86 8.51 2 12 2c5.51 0 10 4.49 10 10z"></path></g></svg>
+                            <span class="p-aside">History</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr id="hr-aside2">
+                <div id="menu-text" class="style-scope ytd-guide-signin-promo-renderer">Sign in to like videos, comment, and subscribe.</div>
 
-                    <button class="sign-in-button-aside" id="button-aside">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: auto; height: auto; padding-right: 5px">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 1c4.96 0 9 4.04 9 9 0 1.42-.34 2.76-.93 3.96-1.53-1.72-3.98-2.89-7.38-3.03A3.996 3.996 0 0016 9c0-2.21-1.79-4-4-4S8 6.79 8 9c0 1.97 1.43 3.6 3.31 3.93-3.4.14-5.85 1.31-7.38 3.03C3.34 14.76 3 13.42 3 12c0-4.96 4.04-9 9-9zM9 9c0-1.65 1.35-3 3-3s3 1.35 3 3-1.35 3-3 3-3-1.35-3-3zm3 12c-3.16 0-5.94-1.64-7.55-4.12C6.01 14.93 8.61 13.9 12 13.9c3.39 0 5.99 1.03 7.55 2.98C17.94 19.36 15.16 21 12 21z" fill="#396eec"></path></svg>
-                        <span class="yt-core-attributed-string yt-core-attributed-string--white-space-no-wrap" role="text">Sign in</span>
-                    </button>
-                <hr id="hr-aside">
+                <button class="sign-in-button-aside" id="button-aside">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: auto; height: auto; padding-right: 5px">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 1c4.96 0 9 4.04 9 9 0 1.42-.34 2.76-.93 3.96-1.53-1.72-3.98-2.89-7.38-3.03A3.996 3.996 0 0016 9c0-2.21-1.79-4-4-4S8 6.79 8 9c0 1.97 1.43 3.6 3.31 3.93-3.4.14-5.85 1.31-7.38 3.03C3.34 14.76 3 13.42 3 12c0-4.96 4.04-9 9-9zM9 9c0-1.65 1.35-3 3-3s3 1.35 3 3-1.35 3-3 3-3-1.35-3-3zm3 12c-3.16 0-5.94-1.64-7.55-4.12C6.01 14.93 8.61 13.9 12 13.9c3.39 0 5.99 1.03 7.55 2.98C17.94 19.36 15.16 21 12 21z" fill="#396eec"></path></svg>
+                    <span class="yt-core-attributed-string yt-core-attributed-string--white-space-no-wrap" role="text">Sign in</span>
+                </button>
+                <hr id="hr-aside3">
             </div>
 
             <div class="video-content">
@@ -140,26 +142,14 @@
                 <!--video items-->
                     <div class="video-items">
                         <div class="row">
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
-                            <button class="col-lg-3">1</button>
+                            @foreach($data as $item)
+{{--                                <div class="item-photo" style="position: relative">--}}
+{{--                                    <img src="public/{{ $item->photo_url }}" alt="">--}}
+{{--                                    <p style="position: absolute; right: 5px; bottom: 5px">{{ $item->duration }}</p>--}}
+{{--                                </div>--}}
+{{--                                <div></div>--}}
+                                <p class="col-lg-3">{{ $item->name }}</p>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -169,21 +159,26 @@
 
     <script>
         function menuFunction() {
-            var elements = document.getElementsByClassName("p-aside");
-            for (var i = 0; i < elements.length; i++) {
+            let elements = document.getElementsByClassName("p-aside");
+
+            for (let i = 0; i < elements.length; i++) {
                 if (elements[i].style.display === "none") {
                     elements[i].style.display = "inline";
                     document.getElementById('menu-text').style.display = 'block';
-                    document.getElementById('hr-aside').style.display = 'block';
-                    document.getElementById('button-aside').style.display = 'block';
+                    document.getElementById('button-aside').style.display = 'flex';
+                    document.getElementById('hr-aside1').style.display = 'block';
+                    document.getElementById('hr-aside2').style.display = 'block';
+                    document.getElementById('hr-aside3').style.display = 'block';
                     document.getElementById('aside').style.width = '12%';
 
                 } else {
                     elements[i].style.display = "none";
                     document.getElementById('menu-text').style.display = 'none';
                     document.getElementById('aside').style.width = '30px';
-                    document.getElementById('hr-aside').style.display = 'none';
                     document.getElementById('button-aside').style.display = 'none';
+                    document.getElementById('hr-aside1').style.display = 'none';
+                    document.getElementById('hr-aside2').style.display = 'none';
+                    document.getElementById('hr-aside3').style.display = 'none';
                 }
             }
         }
