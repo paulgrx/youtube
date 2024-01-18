@@ -148,7 +148,14 @@
 {{--                                    <p style="position: absolute; right: 5px; bottom: 5px">{{ $item->duration }}</p>--}}
 {{--                                </div>--}}
 {{--                                <div></div>--}}
-                                <p class="col-lg-3">{{ $item->name }}</p>
+                                <p class="col-lg-3">
+                                    <img src="images/{{$item->photo_url }}" alt="Photo"><br>
+                                    <img src="images/{{ $item->channel_photo_url}}" alt="Photo"><br>
+                                    {{$item->name}}<br>
+                                    {{$item->channel_name}}<br>
+                                    {{ $item->duration}}<br>
+                                    {{ $item->views_count}}
+                                </p>
                             @endforeach
                         </div>
                     </div>
