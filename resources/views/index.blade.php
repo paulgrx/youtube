@@ -149,8 +149,8 @@
 {{--                                </div>--}}
 {{--                                <div></div>--}}
                                 <p class="col-lg-3">
-                                    <img src="images/{{$item->photo_url }}" alt="Photo"><br>
-                                    <img src="images/{{ $item->channel_photo_url}}" alt="Photo"><br>
+                                    <img src="images/{{$item->photo_url }}" alt="Photo" class="photo_url"><br>
+                                    <img src="images/{{ $item->channel_photo_url}}" alt="Photo" class="channel_photo_url"><br>
                                     {{$item->name}}<br>
                                     {{$item->channel_name}}<br>
                                     {{ $item->duration}}<br>
