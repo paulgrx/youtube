@@ -62,8 +62,9 @@ input::placeholder {
 }
 
 .col-lg-3 {
+    padding: 3px;
     border: 1px solid #ddd;
-    height: 213px;
+    height: 215px;
     border-radius: 1rem;
     flex: 0 0 calc(24.5% - 10px);
     background-color: #f0f0f0;
@@ -71,7 +72,7 @@ input::placeholder {
 }
 
 .content {
-    max-width: 1800px;
+    max-width: 1850px;
     margin: 0 auto;
 }
 
@@ -201,9 +202,10 @@ input::placeholder {
 }
 
 .tags {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
  .col-lg-3 {
+
      img.photo_url{
          width: -moz-available;
          border-radius: 15px;
