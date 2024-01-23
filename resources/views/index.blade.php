@@ -5,12 +5,13 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
-<!--
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
--->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+        <!--
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        -->
 
 
         @vite(['resources/sass/app.scss'])
@@ -149,12 +150,12 @@
 {{--                                </div>--}}
 {{--                                <div></div>--}}
                                 <p class="col-lg-3">
-                                    <img src="images/{{$item->photo_url }}" alt="Photo" class="photo_url"><br>
-                                    <img src="images/{{ $item->channel_photo_url}}" alt="Photo" class="channel_photo_url"><br>
-                                    {{$item->name}}<br>
-                                    {{$item->channel_name}}<br>
-                                    {{ $item->duration}}<br>
-                                    {{ $item->views_count}}
+                                    <img src="images/{{$item->photo_url }}" alt="Photo" class="photo_url">
+                                    <img src="images/{{ $item->channel_photo_url}}" alt="Photo" class="channel_photo_url">
+                                    <span class="item-name">{{$item->name}}</span><br>
+                                    <span class="item-channel-name">{{$item->channel_name}}</span>
+                                    <span class="item-duration">{{ $item->duration}}</span>
+                                    <span class="item-views_count">{{$item->views_count}}</span>
                                 </p>
                             @endforeach
                         </div>
