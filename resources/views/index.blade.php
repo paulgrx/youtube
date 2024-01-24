@@ -149,7 +149,7 @@
 {{--                                    <p style="position: absolute; right: 5px; bottom: 5px">{{ $item->duration }}</p>--}}
 {{--                                </div>--}}
 {{--                                <div></div>--}}
-                                <p class="col-lg-3">
+                                <p class="col-lg-3 my-custom-class">
                                     <img src="images/{{$item->photo_url }}" alt="Photo" class="photo_url">
                                     <img src="images/{{ $item->channel_photo_url}}" alt="Photo" class="channel_photo_url">
                                     <span class="item-name">{{$item->name}}</span><br>
