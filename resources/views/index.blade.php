@@ -5,8 +5,9 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
         <!--
                 <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,7 +121,7 @@
                 <hr id="hr-aside3">
             </div>
 
-            <div class="video-content">
+            <div class="video-content" id="video-content">
                 <!--tags-->
                 <div class="tags">
                     <button type="button" class="btn">All</button>
@@ -149,14 +150,17 @@
 {{--                                    <p style="position: absolute; right: 5px; bottom: 5px">{{ $item->duration }}</p>--}}
 {{--                                </div>--}}
 {{--                                <div></div>--}}
-                                <p class="col-lg-3 my-custom-class">
+                                <div class="col-lg-3 my-custom-class">
                                     <img src="images/{{$item->photo_url }}" alt="Photo" class="photo_url">
-                                    <img src="images/{{ $item->channel_photo_url}}" alt="Photo" class="channel_photo_url">
+                                    <div class="item-main-photo">
+                                        <img src="images/{{ $item->channel_photo_url}}" alt="Photo" class="channel_photo_url">
+                                        <span class="item-duration">{{ $item->duration}}</span>
+                                    </div>
                                     <span class="item-name">{{$item->name}}</span><br>
-                                    <span class="item-channel-name">{{$item->channel_name}}</span>
-                                    <span class="item-duration">{{ $item->duration}}</span>
-                                    <span class="item-views_count">{{$item->views_count}}</span>
-                                </p>
+                                    <span class="item-channel-name">{{$item->channel_name}}</span><br>
+                                    <span class="item-views-count">{{$item->views_count}}</span>
+                                    <span class="item-realise-date">{{$item->realise_date}}</span>
+                                </div>
                             @endforeach
                         </div>
                     </div>
@@ -178,6 +182,8 @@
                     document.getElementById('hr-aside2').style.display = 'block';
                     document.getElementById('hr-aside3').style.display = 'block';
                     document.getElementById('aside').style.width = '12%';
+                    document.getElementById('video-content').style.width = '86.5%';
+                    document.getElementById('video-content').style.margin = '16px 0 0 256px';
 
                 } else {
                     elements[i].style.display = "none";
@@ -187,6 +193,8 @@
                     document.getElementById('hr-aside1').style.display = 'none';
                     document.getElementById('hr-aside2').style.display = 'none';
                     document.getElementById('hr-aside3').style.display = 'none';
+                    document.getElementById('video-content').style.width = 'calc(100% - 100px)';
+                    document.getElementById('video-content').style.margin = '16px 0 0 100px';
                 }
             }
         }
