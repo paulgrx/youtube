@@ -37,6 +37,7 @@ body {
     font-size: 16px;
     font-family: Roboto,Noto,sans-serif;
     color: #b7b7b9;
+    border-color: #cdc5c5;
 }
 
 .input.form-control {
@@ -63,12 +64,8 @@ input::placeholder {
 
 .col-lg-3 {
     padding: 3px;
-    /*border: 1px solid #ddd;*/
     height: 312px;
-    /*border-radius: 1rem;*/
     flex: 0 0 calc(24.5% - 10px);
-    /*background-color: #f0f0f0;*/
-    /*margin-bottom: 158px;*/
 }
 
 .content {
@@ -204,7 +201,7 @@ input::placeholder {
 .tags {
     margin-bottom: 22px;
 }
- .col-lg-3 {
+.col-lg-3 {
      img.photo_url{
          width: 100%;
          border-radius: 15px;
@@ -242,7 +239,6 @@ input::placeholder {
      }
 
      .item-channel-name, .item-views-count, .item-realise-date {
-         line-height: 2rem;
          font-weight: 900;
          color: #6c6464;
      }
@@ -255,5 +251,6 @@ input::placeholder {
 }
 
 .my-custom-class {
-    margin: 1px 5px;
+    margin: 1px 5px 60px;
+
 }
