@@ -13,12 +13,20 @@
 </head>
 <body>
         <div class="container custom-form">
+            <form action="{{ route('form') }}" method="post">
+                @csrf
             <form>
                 <div class="form-group">
-                    <input type="url" class="form-control" id="urlInput" placeholder="Enter URl">
+                    <input type="url" name="url" class="form-control" id="urlInput" placeholder="Enter URl">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
+
+            @isset($message)
+                <div id="output">
+                    <p>{{ $message }}</p>
+                </div>
+            @endisset
         </div>
 
 
