@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
+use App\Models\Video;
 
 class AddController extends Controller
 {
@@ -23,9 +24,21 @@ class AddController extends Controller
         echo '<pre>';
         print_r($response);
         echo '<pre>';
+        
+        die();
 
+        $data = json_decode($response->getBody(), true);
 
+       // $videoId = $data['items'][0]['video-id'];
+        $duration = $data['items'][0]['contentDetails']['duration'];
+        $images = $data['items'][0]['snippet']['thumbnails'];
+        $channelName = $data['items'][0]['snippet']['channelTitle'];
 
-//        return view($response, ['data' => $data]);
+        Video::create([
+            'video_id' => $videoId,
+            'duration' => $duration,
+            'images' => json_encode($images),
+            'channel_name' => $channelName
+        ]);
     }
 }
