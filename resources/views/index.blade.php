@@ -8,12 +8,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
-        <!--
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-        -->
-
 
         @vite(['resources/sass/app.scss'])
 
@@ -145,11 +139,6 @@
                     <div class="video-items">
                         <div class="row">
                             @foreach($data as $item)
-{{--                                <div class="item-photo" style="position: relative">--}}
-{{--                                    <img src="public/{{ $item->photo_url }}" alt="">--}}
-{{--                                    <p style="position: absolute; right: 5px; bottom: 5px">{{ $item->duration }}</p>--}}
-{{--                                </div>--}}
-{{--                                <div></div>--}}
                                 <div class="col-lg-3 my-custom-class">
                                     <img src="images/{{$item->photo_url }}" alt="Photo" class="photo_url">
                                     <div class="item-main-photo">
@@ -198,15 +187,7 @@
                 }
             }
         }
-
         document.addEventListener("DOMContentLoaded", function () {
-
-            // const buttonMenu = document.querySelector(".button-menu");
-            // const aside = document.querySelector(".aside");
-            //
-            // buttonMenu.addEventListener("click", function () {
-            //     aside.classList.toggle("collapsed");
-            // });
         });
     </script>
 

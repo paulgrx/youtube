@@ -7,6 +7,7 @@ use GuzzleHttp\Client;
 use App\Models\Video;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
+use Carbon\Carbon;
 use DateInterval;
 
 class AddController extends Controller
@@ -23,7 +24,7 @@ class AddController extends Controller
         $videoId = $output['v'];
 
         $client = new Client();
-        $response = $client->get('https://youtube.googleapis.com/youtube/v3/videos?id='.$videoId.'&part=snippet,contentDetails,statistics,status&key=AIzaSyBZtu12_Tw0uGlktqYeo3RF8mI0Ztus1Bo');
+        $response = $client->get('https://youtube.googleapis.com/youtube/v3/videos?id='.$videoId.'&part=snippet,contentDetails,statistics,status&key='.$apiKey = env('YOUTUBE_API_KEY'));
 
         $data = json_decode($response->getBody(), true);
 
@@ -38,7 +39,7 @@ class AddController extends Controller
         $channelId = $data['items'][0]['snippet']['channelId'];
 
         // Запрос к API для получения данных о канале
-        $channelResponse = $client->get('https://www.googleapis.com/youtube/v3/channels?id='.$channelId.'&part=snippet&key=AIzaSyBZtu12_Tw0uGlktqYeo3RF8mI0Ztus1Bo');
+        $channelResponse = $client->get('https://www.googleapis.com/youtube/v3/channels?id='.$channelId.'&part=snippet&key='.$apiKey = env('YOUTUBE_API_KEY'));
 
         $channelData = json_decode($channelResponse->getBody(), true);
 
