@@ -19,3 +19,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name(
 Route::get('/', [App\Http\Controllers\Controller::class, 'index'])->name('index');
 Route::get('/add', [App\Http\Controllers\AddController::class, 'add'])->name('add');
 Route::post('/form', [App\Http\Controllers\AddController::class, 'submitForm'])->name('form');
+

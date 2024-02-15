@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('realise_date');
             $table->string('channel_photo_url');
             $table->string('url');
+            $table->string('channelId');
+
             $table->timestamps();
         });
     }

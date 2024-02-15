@@ -135,18 +135,27 @@
                 </div>
 
                 <div class="items">
-                <!--video items-->
                     <div class="video-items">
                         <div class="row">
                             @foreach($data as $item)
                                 <div class="col-lg-3 my-custom-class">
-                                    <img src="images/{{$item->photo_url }}" alt="Photo" class="photo_url">
+                                    <a href="https://www.youtube.com/watch?v={{$item->url}}">
+                                        <img src="images/{{$item->photo_url}}" alt="Photo" class="photo_url">
+                                    </a>
+
                                     <div class="item-main-photo">
-                                        <img src="images/{{ $item->channel_photo_url}}" alt="Photo" class="channel_photo_url">
-                                        <span class="item-duration">{{ $item->duration}}</span>
+                                        <a href="https://www.youtube.com/channel/{{$item->channelId}}">
+                                            <img src="images/{{$item->channel_photo_url}}" alt="Photo" class="channel_photo_url">
+                                        </a>
+                                        <span class="item-duration">{{$item->duration}}</span>
                                     </div>
-                                    <span class="item-name">{{$item->name}}</span><br>
-                                    <span class="item-channel-name">{{$item->channel_name}}</span><br>
+
+                                    <a href="https://www.youtube.com/watch?v={{$item->url}}" style="text-decoration: none">
+                                        <span class="item-name">{{$item->name}}</span><br>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/{{$item->channelId}}" style="text-decoration: none">
+                                        <span class="item-channel-name">{{$item->channel_name}}</span><br>
+                                    </a>
                                     <span class="item-views-count">{{$item->views_count}}</span>
                                     <span class="item-realise-date">{{$item->realise_date}}</span>
                                 </div>

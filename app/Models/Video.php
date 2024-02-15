@@ -10,6 +10,6 @@ class Video extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name', 'channel_name', 'photo_url', 'duration', 'views_count', 'realise_date','channel_photo_url', 'url'
+        'name', 'channel_name', 'photo_url', 'duration', 'views_count', 'realise_date','channel_photo_url', 'url', 'channelId'
     ];
 }

@@ -7,7 +7,6 @@ use GuzzleHttp\Client;
 use App\Models\Video;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
-use Carbon\Carbon;
 use DateInterval;
 
 class AddController extends Controller
@@ -54,7 +53,6 @@ class AddController extends Controller
 
         $name = $data['items'][0]['snippet']['title'];
         $channelName = $data['items'][0]['snippet']['channelTitle'];
-
         $images = $data['items'][0]['snippet']['thumbnails']['standard']['url'];
         $contents = file_get_contents($images);
         $MainPhotoFile = time() . '.jpg';
@@ -67,8 +65,39 @@ class AddController extends Controller
         $seconds = $duration->s;
         $formattedDuration = sprintf('%02d:%02d:%02d', $hours, $minutes, $seconds);
 
+        function thousandsCurrencyFormat($num) {
+            if ($num > 1000) {
+                $x = round($num);
+                $x_number_format = number_format($x);
+                $x_array = explode(',', $x_number_format);
+                $x_parts = array('k', 'm', 'b', 't');
+                $x_count_parts = count($x_array) - 1;
+                $x_display = $x_array[0] . ((int) $x_array[1][0] !== 0 ? '.' . $x_array[1][0] : '');
+                $x_display .= $x_parts[$x_count_parts - 1];
+
+                return $x_display . " views";
+            }
+
+            return $num . " views";
+        }
         $viewsCount = $data['items'][0]['statistics']['viewCount'];
+        $formattedViews = thousandsCurrencyFormat($viewsCount);
+
         $realiseData = $data['items'][0]['snippet']['publishedAt'];
+        $date = new \DateTime($realiseData);
+        $now = new \DateTime();
+        $interval = $date->diff($now);
+        if ($interval->y > 0) {
+                $formatted_realiseData = $interval->y . " year(s) ago";
+            } elseif ($interval->m > 0) {
+                $formatted_realiseData = $interval->m . " month(s) ago";
+            } elseif ($interval->d > 0) {
+                $formatted_realiseData = $interval->d . " day(s) ago";
+            } elseif ($interval->h > 0) {
+                $formatted_realiseData = $interval->h . " hour(s) ago";
+            } else {
+                $formatted_realiseData = $interval->i . " minute(s) ago";
+        }
         $videoId = $data['items'][0]['id'];
 
         Video::create([
@@ -76,10 +105,13 @@ class AddController extends Controller
             'channel_name' => $channelName,
             'photo_url' => $MainPhotoFile,
             'duration' => $formattedDuration,
-            'views_count' => $viewsCount,
-            'realise_date' => $realiseData,
+            'views_count' => $formattedViews,
+            'realise_date' => $formatted_realiseData,
             'channel_photo_url' => $channelPhotoFile,
-            'url' => $videoId
+            'url' => "https://www.youtube.com/watch?v=".$videoId,
+            'channelId' =>"https://www.youtube.com/channel/".$channelId
         ]);
+
+        return redirect('/');
     }
 }
