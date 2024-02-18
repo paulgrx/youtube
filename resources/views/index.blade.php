@@ -139,21 +139,21 @@
                         <div class="row">
                             @foreach($data as $item)
                                 <div class="col-lg-3 my-custom-class">
-                                    <a href="https://www.youtube.com/watch?v={{$item->url}}">
+                                    <a href="{{$item->url}}">
                                         <img src="images/{{$item->photo_url}}" alt="Photo" class="photo_url">
                                     </a>
 
                                     <div class="item-main-photo">
-                                        <a href="https://www.youtube.com/channel/{{$item->channelId}}">
+                                        <a href="{{$item->channelId}}">
                                             <img src="images/{{$item->channel_photo_url}}" alt="Photo" class="channel_photo_url">
                                         </a>
                                         <span class="item-duration">{{$item->duration}}</span>
                                     </div>
 
-                                    <a href="https://www.youtube.com/watch?v={{$item->url}}" style="text-decoration: none">
+                                    <a href="{{$item->url}}" style="text-decoration: none">
                                         <span class="item-name">{{$item->name}}</span><br>
                                     </a>
-                                    <a href="https://www.youtube.com/channel/{{$item->channelId}}" style="text-decoration: none">
+                                    <a href="{{$item->channelId}}" style="text-decoration: none">
                                         <span class="item-channel-name">{{$item->channel_name}}</span><br>
                                     </a>
                                     <span class="item-views-count">{{$item->views_count}}</span>
@@ -181,7 +181,7 @@
                     document.getElementById('hr-aside3').style.display = 'block';
                     document.getElementById('aside').style.width = '12%';
                     document.getElementById('video-content').style.width = '86.5%';
-                    document.getElementById('video-content').style.margin = '16px 0 0 256px';
+                    document.getElementById('video-content').style.margin = '16px 0 0 0.5%';
 
                 } else {
                     elements[i].style.display = "none";
@@ -191,7 +191,7 @@
                     document.getElementById('hr-aside1').style.display = 'none';
                     document.getElementById('hr-aside2').style.display = 'none';
                     document.getElementById('hr-aside3').style.display = 'none';
-                    document.getElementById('video-content').style.width = 'calc(100% - 100px)';
+                    document.getElementById('video-content').style.width = 'calc(100% - 130px)';
                     document.getElementById('video-content').style.margin = '16px 0 0 100px';
                 }
             }

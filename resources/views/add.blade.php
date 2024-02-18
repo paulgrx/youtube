@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    @vite(['resources/sass/app.scss'])
+    @vite(['resources/sass/add.scss'])
 
     <title>Document</title>
 </head>
