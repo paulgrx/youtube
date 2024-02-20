@@ -252,5 +252,27 @@ input::placeholder {
 
 .my-custom-class {
     margin: 1px 5px 60px;
-
 }
+
+@media screen and (max-width: 400px) {
+
+    .content-header {
+        display: inline-flex;
+        height: 48px;
+        padding: 0;
+
+        .button_x_logo {
+            width: 32%;
+
+            #external-icon {
+                width: 80%;
+            }
+        }
+    }
+
+
+    .aside, .button-menu {
+        display: none;
+    }
+
+    }
