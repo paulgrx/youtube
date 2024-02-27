@@ -18,7 +18,7 @@
         <div class="content">
             <div class="content-header">
 
-                <div class="button_x_logo">
+                <div class="button-x-logo">
                     <!--button menu-->
                     <button class="button-menu" onclick="menuFunction()">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; margin-right: 19px; /*display: block; width: 1.3%; height: auto;*/"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg>
@@ -125,7 +125,7 @@
 
             <div class="video-content" id="video-content">
                 <!--tags-->
-                <div class="tags">
+                <div class="tags" onmouseenter="hideScrollbar(this)" onmouseleave="showScrollbar(this)">
                     <button type="button" class="btn">All</button>
                     <button type="button" class="btn">Drifting</button>
                     <button type="button" class="btn">Ski</button>
@@ -204,6 +204,15 @@
                 }
             }
         }
+
+        function hideScrollbar(element) {
+            element.style.overflow = 'hidden';
+        }
+
+        function showScrollbar(element) {
+            element.style.overflow = 'auto';
+        }
+
         document.addEventListener("DOMContentLoaded", function () {
         });
     </script>
