@@ -308,7 +308,7 @@ input::placeholder {
             overflow-y: hidden;
             height: 48px;
             margin: 0;
-            
+
             .btn {
                 display: inline-block;
                 margin: 8px 8px 8px 0;
@@ -319,6 +319,60 @@ input::placeholder {
 
         }
 
+        .col-lg-3.my-custom-class {
+            margin: 0;
+            padding: 0;
+            height: 313px;
+
+        }
+
+        .col-lg-3 {
+            img.photo_url {
+                border-radius: 0;
+                width: 400px;
+                height: 225px;
+            }
+
+            img.channel_photo_url {
+                margin: 12px;
+            }
+
+            .item-name {
+                margin: 10px 30px 0 0;
+                position: absolute;
+                line-height: 1.1rem;
+                font-size: 0.9rem;
+            }
+
+            .youtube-data {
+                margin-top: 23px;
+
+                .item-channel-name {
+                    font-weight: 500;
+                    font-size: .7rem;
+                }
+
+                #channel-name-display {
+                    display: none;
+                }
+
+                .item-views-count {
+                    font-weight: 500;
+                    font-size: .7rem;
+                }
+
+                .item-realise-date {
+                    font-weight: 500;
+                    font-size: .7rem;
+
+                .item-realise-date::before {
+                        font-size: 0.5rem;
+                    }
+                }
+
+            }
+
+        }
     }
 
 

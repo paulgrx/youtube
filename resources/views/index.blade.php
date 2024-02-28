@@ -161,11 +161,14 @@
                                     <a href="{{$item->url}}" style="text-decoration: none">
                                         <span class="item-name">{{$item->name}}</span><br>
                                     </a>
-                                    <a href="{{$item->channelId}}" style="text-decoration: none">
-                                        <span class="item-channel-name">{{$item->channel_name}}</span><br>
-                                    </a>
-                                    <span class="item-views-count">{{$item->views_count}}</span>
-                                    <span class="item-realise-date">{{$item->realise_date}}</span>
+
+                                    <div class="youtube-data">
+                                        <a href="{{$item->channelId}}" style="text-decoration: none">
+                                            <span class="item-channel-name">{{$item->channel_name}}</span><br id="channel-name-display">
+                                        </a>
+                                        <span class="item-views-count">{{$item->views_count}}</span>
+                                        <span class="item-realise-date">{{$item->realise_date}}</span>
+                                    </div>
                                 </div>
                             @endforeach
                         </div>
