@@ -254,6 +254,67 @@ input::placeholder {
     margin: 1px 5px 60px;
 }
 
+
+@media screen  and (min-width: 811px) {
+    .youtube_logo_tablet.search-icon {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 810px) {
+    .content {
+        max-width: 810px;
+
+        .content-header {
+            padding: 0;
+            height: 48px;
+            width: 100%;
+            box-shadow: 0 3px 3px -2px rgba(0,0,0,.5);
+
+            .button-x-logo {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                width: 14%;
+
+                .button-menu {
+                    display: none;
+                }
+
+                .external-icon {
+                    display: none;
+                }
+            }
+
+            .header-navbar {
+                width: 86%;
+                display: flex;
+                justify-content: flex-end;
+
+                .search-button {
+                    display: none;
+                }
+
+                .sign-in-button {
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+
+                    .patch-style-sign-in-button{
+                        fill: #000000;
+                    }
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 400px) {
 
     .content-header {
@@ -263,34 +324,38 @@ input::placeholder {
         width: 100%;
         box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 
-        .search-icon {
-            width: 6%;
-        }
-
-        .py-3.mb-3 {
-            display: none;
-        }
-
-        .sign-in-button {
-            border: none;
-            width: 15%;
-            margin: 0;
-            padding: 0 0 0 23px;
-
-            .patch-style-sign-in-button{
-                fill: #000000;
-            }
-
-            span {
-                display: none;
-            }
-        }
-
         .button-x-logo {
             display: flex;
-            padding: 0 12px;
+            justify-content: center;
+            text-align: center;
+            width: 28%;
+            margin-right: 204px;
         }
 
+        .header-navbar {
+            .search-icon {
+                width: 6%;
+            }
+
+            .search-button {
+                display: none;
+            }
+
+            .sign-in-button {
+                border: none;
+                width: 15%;
+                margin: 0;
+                padding: 0 0 0 23px;
+
+                .patch-style-sign-in-button{
+                    fill: #000000;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
     }
 
     .aside, .button-menu {
@@ -341,11 +406,15 @@ input::placeholder {
                 margin: 10px 30px 0 0;
                 position: absolute;
                 line-height: 1.1rem;
-                font-size: 0.9rem;
+                font-size: 0.8rem;
+            }
+
+            .item_name {
+                height: 44px;
             }
 
             .youtube-data {
-                margin-top: 23px;
+                /*margin-top: 23px;*/
 
                 .item-channel-name {
                     font-weight: 500;
@@ -361,25 +430,29 @@ input::placeholder {
                     font-size: .7rem;
                 }
 
+                .item-views-count::before{
+                    content: "•";
+                    margin: 0 2px;
+                    color: #6c6464;
+                }
+
                 .item-realise-date {
                     font-weight: 500;
                     font-size: .7rem;
 
-                .item-realise-date::before {
-                        font-size: 0.5rem;
-                    }
                 }
 
             }
 
         }
     }
-
-
-    }
-
-@media screen and (min-width: 401px) {
-    .search-icon {
-        display: none;
-    }
 }
+
+
+
+
+
+
+
+
+
