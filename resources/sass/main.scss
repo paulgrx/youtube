@@ -289,8 +289,13 @@ input::placeholder {
 
             .header-navbar {
                 width: 86%;
+                height: inherit;
                 display: flex;
                 justify-content: flex-end;
+
+                .search-icon {
+                    padding-right: 19px;
+                }
 
                 .search-button {
                     display: none;
@@ -298,8 +303,14 @@ input::placeholder {
 
                 .sign-in-button {
                     border: none;
-                    padding: 0;
+                    height: 100%;
+                    padding: 0 7px 0 0;
                     margin: 0;
+                    justify-content: center;
+
+                    .sign-in-button-svg {
+                        margin: 0;
+                    }
 
                     .patch-style-sign-in-button{
                         fill: #000000;
@@ -309,6 +320,63 @@ input::placeholder {
                         display: none;
                     }
                 }
+            }
+        }
+
+        .aside {
+            display: none;
+        }
+
+        .video-content {
+            float: none;
+            margin: 0;
+            width: 100%;
+
+            .tags {
+                white-space: nowrap;
+                overflow-x: auto;
+                overflow-y: hidden;
+                scrollbar-width: none;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+                height: 48px;
+                margin: 0 0 10px 0;
+
+                .btn {
+                    display: inline-block;
+                    margin: 8px 8px 8px 0;
+                    line-height: 1.1rem;
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                }
+
+                .btn:first-child {
+                    margin-left: 10px;
+                }
+
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 0 auto;
+                padding: 0 16px;
+
+                .col-lg-3.my-custom-class {
+                    padding: 0;
+                }
+
+                .my-custom-class {
+                    margin: 0;
+                }
+                .col-lg-3 {
+                    height: 278px;
+
+                    .photo_url {
+                        width: 381px;
+                    }
+                }
+
             }
         }
     }
