@@ -164,25 +164,27 @@
                                         <img src="images/{{$item->photo_url}}" alt="Photo" class="photo_url">
                                     </a>
 
-                                    <div class="item-main-photo">
-                                        <a href="{{$item->channelId}}">
-                                            <img src="images/{{$item->channel_photo_url}}" alt="Photo" class="channel_photo_url">
-                                        </a>
-                                        <span class="item-duration">{{$item->duration}}</span>
-                                    </div>
+                                    <div class="main-youtube-data">
+                                        <div class="item-main-photo">
+                                            <a href="{{$item->channelId}}">
+                                                <img src="images/{{$item->channel_photo_url}}" alt="Photo" class="channel_photo_url">
+                                            </a>
+                                            <span class="item-duration">{{$item->duration}}</span>
+                                        </div>
 
-                                    <div class="item_name">
-                                        <a href="{{$item->url}}" style="text-decoration: none">
-                                            <span class="item-name">{{$item->name}}</span><br>
-                                        </a>
-                                    </div>
+                                        <div class="item_name">
+                                            <a href="{{$item->url}}" style="text-decoration: none">
+                                                <span class="item-name">{{$item->name}}</span><br>
+                                            </a>
+                                        </div>
 
-                                    <div class="youtube-data">
-                                        <a href="{{$item->channelId}}" style="text-decoration: none">
-                                            <span class="item-channel-name">{{$item->channel_name}}</span><br id="channel-name-display">
-                                        </a>
-                                        <span class="item-views-count">{{$item->views_count}}</span>
-                                        <span class="item-realise-date">{{$item->realise_date}}</span>
+                                        <div class="youtube-data">
+                                            <a class="channel_id_styles" href="{{$item->channelId}}" style="text-decoration: none">
+                                                <span class="item-channel-name">{{$item->channel_name}}</span><br id="channel-name-display">
+                                            </a>
+                                            <span class="item-views-count">{{$item->views_count}}</span>
+                                            <span class="item-realise-date">{{$item->realise_date}}</span>
+                                        </div>
                                     </div>
                                 </div>
                             @endforeach

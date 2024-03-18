@@ -364,6 +364,7 @@ input::placeholder {
 
                 .col-lg-3.my-custom-class {
                     padding: 0;
+                    height: 303px;
                 }
 
                 .my-custom-class {
@@ -374,6 +375,50 @@ input::placeholder {
 
                     .photo_url {
                         width: 381px;
+                    }
+
+                    .main-youtube-data {
+                        height: 61px;
+                        margin-top: 8px;
+
+                        .item-name {
+                            font-size: 0.91rem;
+                            line-height: normal;
+                            letter-spacing: -.01rem;
+                        }
+
+                        .channel_photo_url {
+                            margin: 4px 14px 0 0;
+                            width: 10.5%;
+                        }
+
+                        .youtube-data {
+                            height: 20px;
+                            margin-left: 53px;
+
+                            .channel_id_styles {
+                                display: inline-block;
+
+                                .item-channel-name {
+                                    font-weight: 500;
+                                }
+                            }
+
+                            .item-views-count {
+                                font-size: 12px;
+                            }
+
+                            .item-views-count::before, .item-realise-date::before{
+                                content: "•";
+                                margin: 0 4px;
+                                color: #6c6464;
+                                font-size: 9px;
+                            }
+
+                            .item-realise-date {
+                                font-size: 12px;
+                            }
+                        }
                     }
                 }
 
