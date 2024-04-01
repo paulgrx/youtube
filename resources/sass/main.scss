@@ -26,7 +26,41 @@ body {
             }
         }
 
-        .col-lg-2 {
+        .col-lg-8 {
+            margin: auto 0;
+
+            .search-button {
+
+                .w-100.me-3 {
+                    display: inline-flex;
+
+                    input.form-control {
+                        margin-left: 283px;
+                        border-radius: 23px 0 0 23px;
+                        width: 538px;
+                        height: 40px;
+                        font-size: 16px;
+                        font-family: Roboto,Noto,sans-serif;
+                        color: #b7b7b9;
+                        border-color: #cdc5c5;
+                    }
+
+                    button.search-button-btn {
+                        width: 64px;
+                        height: 40px;
+                        border-radius: 0 40px 40px 0;
+                        cursor: pointer;
+                        background-color: #f5f5f5;
+                        border: var(--bs-border-width) solid var(--bs-border-color);
+                        border-left: none;
+                        // border-left-color: currentcolor;
+                        border-color: #cdc5c5;
+                    }
+                }
+            }
+        }
+
+        .col-lg-2#sign-in-id {
             display: flex;
             justify-content: right;
 
@@ -56,15 +90,10 @@ body {
         }
     }
 }
-
-
-.py-3.mb-3.search-button {
-    display: inline-flex;
-}
-
+/*
 :root {
     --bs-border-radius: 1.375rem;
-}
+}*/
 
 .py-3 {
     padding-top: 0.2rem !important;
@@ -81,15 +110,6 @@ body {
 
 .d-flex.align-items-center {
     width: 79%;
-}
-
-.form-control {
-    margin: 0 auto;
-    width: 56%;
-    font-size: 16px;
-    font-family: Roboto,Noto,sans-serif;
-    color: #b7b7b9;
-    border-color: #cdc5c5;
 }
 
 .input.form-control {
@@ -278,7 +298,7 @@ input::placeholder {
 
 
 @media screen  and (min-width: 811px) {
-    .youtube_logo_tablet, .search-icon {
+    .youtube_logo_tablet {
         display: none;
     }
 }

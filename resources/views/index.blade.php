@@ -58,25 +58,24 @@
 
 
                     <!--search icon in mobile/tablet version-->
-                        <div class="search-icon">
-                            <div style="width: 100%; height: 100%;">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;">
-                                    <path d="m20.87 20.17-5.59-5.59C16.35 13.35 17 11.75 17 10c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.75 0 3.35-.65 4.58-1.71l5.59 5.59.7-.71zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg></div>
-                        </div>
+
 
                         <!--search-->
                         <div class="col-lg-8">
                             <div class="search-button">
-                                <div class="d-flex align-items-center">
-                                    <form class="w-100 me-3" role="search">
-                                        <input type="search" class="form-control" placeholder="Search" aria-label="Search">
-                                    </form>
-                                </div>
+                                <form action="{{ route('index') }}" method="get" class="w-100 me-3" role="search">
+                                    @csrf
+                                    <input type="text" name="search" class="form-control" placeholder="Search" value="{{ isset($_GET['search']) ? $_GET['search'] : '' }}" aria-label="Search">
+                                    <button type="submit" class="search-button-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
+                                            <path d="m20.87 20.17-5.59-5.59C16.35 13.35 17 11.75 17 10c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.75 0 3.35-.65 4.58-1.71l5.59 5.59.7-.71zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg>
+                                    </button>
+                                </form>
                             </div>
                         </div>
 
                         <!--            sign in button-->
-                        <div class="col-lg-2">
+                        <div class="col-lg-2" id="sign-in-id">
                             <button class="sign-in-button">
                                 <svg  id="sign-in-button-svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                     <path class="patch-style-sign-in-button" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 1c4.96 0 9 4.04 9 9 0 1.42-.34 2.76-.93 3.96-1.53-1.72-3.98-2.89-7.38-3.03A3.996 3.996 0 0016 9c0-2.21-1.79-4-4-4S8 6.79 8 9c0 1.97 1.43 3.6 3.31 3.93-3.4.14-5.85 1.31-7.38 3.03C3.34 14.76 3 13.42 3 12c0-4.96 4.04-9 9-9zM9 9c0-1.65 1.35-3 3-3s3 1.35 3 3-1.35 3-3 3-3-1.35-3-3zm3 12c-3.16 0-5.94-1.64-7.55-4.12C6.01 14.93 8.61 13.9 12 13.9c3.39 0 5.99 1.03 7.55 2.98C17.94 19.36 15.16 21 12 21z" fill="#396eec"></path></svg>
