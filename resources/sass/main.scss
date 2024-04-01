@@ -3,11 +3,63 @@ body {
     padding: 0;
 }
 
-.content-header {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    padding-left: 20px;
+.container-header {
+    height: 56px;
+    padding: 0 16px;
+
+    #header-id {
+        height: 56px;
+
+        .col-lg-2.button-x-logo {
+            text-align: center;
+            display: flex;
+
+            .button-menu {
+                width: 40px;
+                background-color: transparent;
+                border: transparent;
+                margin-right: 17px;
+            }
+
+            svg.external-icon {
+                width: 32%;
+            }
+        }
+
+        .col-lg-2 {
+            display: flex;
+            justify-content: right;
+
+            button.sign-in-button {
+                font-family: "Roboto","Arial",sans-serif;
+                margin-top: 10px;
+                height: 36px;
+                width: 35%;
+                border-radius: 33px;
+                display: inline-flex;
+                align-items: center;
+                border: 1px solid #dbdbe0;
+                padding: 10px;
+                background-color: transparent;
+
+                svg#sign-in-button-svg {
+                    margin-right: 6px;
+                }
+
+                .sign-in-text {
+                    font-weight: 500;
+                    font-size: .9rem;
+                    letter-spacing: -0.4px;
+                    color: #065fd4;
+                }
+            }
+        }
+    }
+}
+
+
+.py-3.mb-3.search-button {
+    display: inline-flex;
 }
 
 :root {
@@ -108,49 +160,19 @@ input::placeholder {
     display: inline;
 }
 
-.sign-in-button {
-    font-family: "Roboto","Arial",sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: 7px;
-    height: 36px;
-    width: 5.85%;
-    border-radius: 17px;
-    display: flex;
-    align-items: center;
-    border: 1px solid #dbdbe0;
-    padding: 10px;
-    background-color: transparent;
-}
-
-.sign-in-button svg {
-    margin-right: 10px;
-}
-
 .yt-core-attributed-string {
     color: #396eec;
     font-weight: 900;
     font-size: 1.1em;
 }
 
-.button-menu {
-    background-color: transparent;
-    border: transparent;
-}
-
-.style-scope.ytd-guide-signin-promo-renderer{
+/*.style-scope.ytd-guide-signin-promo-renderer{
     display: block;
     color: var(--yt-spec-text-primary);
     font-family: "Roboto","Arial",sans-serif;
     line-height: 1.5rem;
     font-weight: 400;
-}
-
-.yt-core-attributed-string.yt-core-attributed-string--white-space-no-wrap {
-    font-weight: 700;
-    font-size: 0.9rem;
-}
+}*/
 
 .sign-in-button-aside {
     font-family: "Roboto","Arial",sans-serif;
@@ -256,7 +278,7 @@ input::placeholder {
 
 
 @media screen  and (min-width: 811px) {
-    .youtube_logo_tablet.search-icon {
+    .youtube_logo_tablet, .search-icon {
         display: none;
     }
 }
@@ -266,7 +288,7 @@ input::placeholder {
     .content {
         max-width: 810px;
 
-        .content-header {
+        .container-header {
             padding: 0;
             height: 48px;
             width: 100%;
@@ -430,7 +452,7 @@ input::placeholder {
 
 @media screen and (max-width: 400px) {
 
-    .content-header {
+    .container-header {
         display: inline-flex;
         height: 48px;
         padding: 0;
